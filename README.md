@@ -102,19 +102,16 @@ Start by downloading the font using the following command.
 
 Then navigate to your preferences in terminal and manually set the font to Ubuntu Mono Powerline.
 
-Now we will change the color scheme for terminal to IdleToes by running the following commands:
-
-    $ gconftool-2 --set /apps/gnome-terminal/profiles/Default/foreground_color --type string "#FFFFFF"
-    
-    $ gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type string "#323232"
-    
-    $ gconftool-2 --set /apps/gnome-terminal/profiles/Default/bold_color --type string "#FFFFA9"
-    
-    $ gconftool-2 --set /apps/gnome-terminal/profiles/Default/palette --type string "#323232:#D25252:#7FE173:#FFC66D:#4098FF:#F57FFF:#BED6FF:#EEEEEC:#535353:#F07070:#9DFF90:#FFE48B:#5EB7F7:#FF9DFF:#DCF4FF:#FFFFFF"
+Remember to change your terminal colour theme to **Solarized Dark**.
 
 Afterwords a restart of terminal may be required. For more color schemes click [here](https://apps.owncloud.com/stories/Steven+Harms:+Gnome+Terminal+Color+Schemes?id=106857&PHPSESSID=c61db5c362562ce4c9006abfb273a6b7). 
 
-Finally open up ~/.zshrc (a hidden config file `zsh` created in your home directory). Change the theme to `agnoster` and add any plugins you wish to use. For a list of plugins and available themes and more on Oh-My-Zsh consult their [GitHub](https://github.com/robbyrussell/oh-my-zsh) or [Website](http://ohmyz.sh/).
+Finally open up ~/.zshrc (a hidden config file `zsh` created in your home directory). Change the theme to `agnoster` and add any plugins you wish to use. 
+
+	$ subl ~/.zshrc
+	$ nano ~/.zshrc 
+
+For a list of plugins and available themes and more on Oh-My-Zsh consult their [GitHub](https://github.com/robbyrussell/oh-my-zsh) or [Website](http://ohmyz.sh/).
 
 
 ### 3. Setup Ruby Environment
@@ -155,10 +152,12 @@ For a list of available ruby versions run:
 Pick the appropriate one and install it with:
     
     $ rbenv install 2.1.2
+    $ rbenv install [version number]
 
 To set the newly installed version as your global ruby version run:
 
     $ rbenv global 2.1.2
+    $ rbenv global [version number]
 
 Installing gems globally should now be equally easy.
  For example to install Rails (one of the our favourite web frameworks) simply run:
@@ -170,11 +169,8 @@ Installing gems globally should now be equally easy.
 Setup the basics for a Node.js development environment for work using npm packages, Meteor, Express.js, Harp.js and other Node based tools.
 
 #### 4.1  Install `nvm`
-    
-    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash
-    
+     
     $ git clone https://github.com/creationix/nvm.git ~/.nvm
-
     $ source ~/.nvm/nvm.sh
 
 #### 4.2  Install `npm`   
@@ -193,4 +189,4 @@ Setup the basics for a Node.js development environment for work using npm packag
     $ bower -v
 
 ---
-> This guide was written by Marula.io using [StackEdit](https://stackedit.io/).
+> This guide was written by Codelab.io using [StackEdit](https://stackedit.io/).
