@@ -83,10 +83,10 @@ To install Oh-My-Zsh run the following command:
 
 Before we start setting up Oh My Zsh, we'll need to install a good text editor. Here are the instructions required to install sublime text 3.
 
-	$ cd ~/Downloads
-	$ wget https://download.sublimetext.com/sublime-text_build-3103_amd64.deb ~/Downloads
-	$ sudo dpkg -i sublime-text_build-3103_amd64.deb
-	$ sudo apt-get install -f
+    $ cd ~/Downloads
+    $ wget https://download.sublimetext.com/sublime-text_build-3103_amd64.deb ~/Downloads
+    $ sudo dpkg -i sublime-text_build-3103_amd64.deb
+    $ sudo apt-get install -f
 
 
 #### 2.4 Oh-My-Zsh  Setup
@@ -108,8 +108,8 @@ Afterwords a restart of terminal may be required. For more color schemes click [
 
 Finally open up ~/.zshrc (a hidden config file `zsh` created in your home directory). Change the theme to `agnoster` and add any plugins you wish to use. 
 
-	$ subl ~/.zshrc
-	$ nano ~/.zshrc 
+    $ subl ~/.zshrc
+    $ nano ~/.zshrc 
 
 For a list of plugins and available themes and more on Oh-My-Zsh consult their [GitHub](https://github.com/robbyrussell/oh-my-zsh) or [Website](http://ohmyz.sh/).
 
@@ -169,7 +169,7 @@ Installing gems globally should now be equally easy.
 Setup the basics for a Node.js development environment for work using npm packages, Meteor, Express.js, Harp.js and other Node based tools.
 
 #### 4.1  Install `nvm`
-     
+    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
     $ git clone https://github.com/creationix/nvm.git ~/.nvm
     $ source ~/.nvm/nvm.sh
 
@@ -177,16 +177,37 @@ Setup the basics for a Node.js development environment for work using npm packag
     $ sudo apt-get install npm
     $ npm -v
 
-#### 4.3  Install `harp`   
-    $ sudo npm install -g harp
-    $ harp -v
-
-#### 4.4 Install `bower`   
+#### 4.3 Install `bower`   
     $ sudo npm install -g bower
 
-#### 4.4.2 Link bower to nodejs
+#### 4.3.2 Link bower to nodejs
     $ sudo ln -s /usr/bin/nodejs /usr/bin/node
     $ bower -v
+
+### 5. Finally, install Node.js
+####5.1 Grab latest node.js version in terminal
+    $ nvm install node
+####5.2 List all installed node.js versions 
+    $ nvm ls
+####5.3 Select the latest version of node for use
+    $ nvm use v6.0.0
+    (or whichever version it is you desire)
+####5.4 Troubleshooting node install
+    $ nvm ls
+    $ nvm use stable
+    $ nvm install stable
+
+###6. Install Ember
+    $ sudo npm install -g ember-cli
+    $ sudo npm cache clean -f
+    $ sudo npm install -g n
+    $ sudo n stable
+    $ node -v
+    $ nvm user v6.0.0
+    $ nvm current
+    
+###DONE!
+
 
 ---
 > This guide was written by Codelab.io using [StackEdit](https://stackedit.io/).
