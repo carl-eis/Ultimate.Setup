@@ -198,13 +198,19 @@ Setup the basics for a Node.js development environment for work using npm packag
     $ nvm install stable
 
 ###6. Install Ember
+###6.1 Install Ember Globally
     $ sudo npm install -g ember-cli
+
+###7. More Troubleshooting
+####7.1
     $ sudo npm cache clean -f
     $ sudo npm install -g n
     $ sudo n stable
     $ node -v
-    $ nvm user v6.0.0
+    $ nvm use v6.0.0
     $ nvm current
+####7.2 Extra Dangerous, if nothing works:
+    $ n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
     
 ###DONE!
 
