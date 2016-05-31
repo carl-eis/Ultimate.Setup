@@ -236,10 +236,14 @@ We have some other cool programs that are really great to use for creating stati
 ###4. Run your site
 Make sure you're in the site directory (herp derp.)
 Then run this:
+
 	$ wintersmith preview
+	
 It runs on localhost:8080
 
-Running 
+Running
+
 	$ wintersmith build
+
 Puts your site in the /build directory for distribution. For more details, visit https://github.com/jnordberg/wintersmith#quick-start
 > This guide was written by Codelab.io using [StackEdit](https://stackedit.io/).
