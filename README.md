@@ -216,4 +216,30 @@ Setup the basics for a Node.js development environment for work using npm packag
 
 
 ---
+
+
+#Other Cool Things
+We have some other cool programs that are really great to use for creating static sites. My favourite one so far is called Wintersmith, and can be found at www.wintersmith.io
+
+###1. Install Wintersmith
+	$ npm install wintersmith -g
+
+###2. Create new project
+	$ wintersmith new <path> OR .
+	$ cd yourPathHere
+
+###3. Install Dependencies
+	$ npm install wintersmith-node-sass --save-dev
+	$ npm install wintersmith-handlebars --save-dev
+	$ npm install  wintersmith-livereload --save-dev
+
+###4. Run your site
+Make sure you're in the site directory (herp derp.)
+Then run this:
+	$ wintersmith preview
+It runs on localhost:8080
+
+Running 
+	$ wintersmith build
+Puts your site in the /build directory for distribution. For more details, visit https://github.com/jnordberg/wintersmith#quick-start
 > This guide was written by Codelab.io using [StackEdit](https://stackedit.io/).
