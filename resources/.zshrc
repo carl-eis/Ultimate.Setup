@@ -8,7 +8,7 @@ source ~/antigen.zsh
 antigen bundle git
 antigen bundle heroku
 antigen bundle pip
-antigen bundle lein
+# antigen bundle lein
 antigen bundle command-not-found
 
 # Syntax highlighting bundle.
