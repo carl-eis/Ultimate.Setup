@@ -1,5 +1,5 @@
 # Created by newuser for 5.1.1
-source ~/'ZSH Themes'/antigen/antigen.zsh
+source ~/antigen.zsh
 
 # Load the oh-my-zsh's library.
 # antigen use oh-my-zsh
